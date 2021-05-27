@@ -1,0 +1,32 @@
+# 数据库账号密码，要求检查的数据库要有统一的账号密码
+USER: root
+PASSWD: root
+
+# 以下配置为默认
+# RDS
+RDS_FILEPATH: check.txt             # 从文件读取要检查的实例IP
+RDS_INFO_FILEPATH: instance_info.txt     # 实例基础信息，包括地域、实例id、实例名
+TIMEOUT: 120                      # 超时时间，单位秒(s)
+
+#Table
+LIMIT_COUNT: 3                    # 表示从表中提取多少条数据
+
+# output
+EXCEL_NAME: result.xlsx
+LOGPATH: run.log
+# 数据库白名单，不对其进行检查
+DB_WHITE_LIST: ["mysql", "information_schema"]
+
+#如过使用的是阿里云机器RDS的话需要填写一下信息
+#阿里云AccessKey
+ACCESSKEYID:
+ACCESSKEYSECRET:
+REGIONS: [
+  "cn-hangzhou",
+  "cn-shanghai",
+  "cn-qingdao",
+  "cn-beijing",
+  "cn-zhangjiakou",
+  "cn-huhehaote",
+  "cn-shenzhen",
+  ]

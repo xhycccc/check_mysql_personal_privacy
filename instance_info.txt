@@ -1,0 +1,2 @@
+rm-xxx	test	cn-hangzhou	rm-xxx.mysql.rds.aliyuncs.com:3306
+test	test	cn-shanghai	127.0.0.1:3306
