@@ -47,8 +47,7 @@
    ```
    go run main.go -init
    ```
-   
-  开始检查：
+   开始检查：
    ```
-  go run main.go -run                 
-  ```
+   go run main.go -run
+   ```
